@@ -7,6 +7,7 @@
     <title>Pomodoro Timer</title>
     <style>
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
@@ -14,8 +15,11 @@
             align-items: center;
             height: 100vh;
             background-color: #f4f4f4;
-            background-size: cover;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
             transition: background-image 0.5s;
+            color: white;
         }
 
         #timer {
@@ -39,7 +43,9 @@
 </head>
 
 <body>
-    <div>
+    <div style="    background: #00000094;
+    padding: 1rem;
+    border-radius: 10px;">
         <div>
             <label>Fokus Time (menit): <input type="number" id="focusTime" value="25" min="1"></label>
             <label>Short Break (menit): <input type="number" id="shortBreak" value="5" min="1"></label>
